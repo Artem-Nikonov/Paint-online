@@ -35,9 +35,9 @@
          <div class="palette black1" id="black1" onclick="changeColors(this)"></div>
          <div class="palette black2" id="black2" onclick="changeColors(this)"></div>
        </div>
-
-       <div id="erasing"><center><p>Ластик</p></center></div>
+       <div class="extra"><p>Ластик | Заливка</p></div>
        <div class="palette white" id="erase" onclick="changeColors(this)"></div>
+       <div class="palette white" id="colorFill" onclick="colorFill(this)"></div>
        <br />
        </div>
 
@@ -61,9 +61,12 @@
         <input type="button" value="Грубая" id="rough" onclick="lines();changeBrushStyle(this);"> <br />
 
         <center><p>Фигуры</p></center>
+        <div class="shapes shapereline" id="shapeline" onclick="lines()"></div>
+        <div class="shapes shapetriangle" id="shapestraightLine" onclick="straightLine()"></div>
         <div class="shapes shaperectangle" id="shaperectangle" onclick="rectangle()"></div>
-        <div class="shape shapetriangle" id="shapetriangle" onclick="triangle()"></div>
-       
+        <div class="shapes shapetriangle" id="shapetriangle" onclick="triangle()"></div>
+        <div class="shapes shapeoval" id="shapeoval" onclick="oval()"></div>
+        
       </center>
       </div>      
       <div id="space">

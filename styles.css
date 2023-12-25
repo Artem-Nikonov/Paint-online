@@ -8,6 +8,10 @@ a {
   text-decoration: none; 
 }
 
+.extra{
+  text-align: center;
+}
+
 #title {
   font-size: 50px;
   text-align: center;
@@ -41,7 +45,9 @@ a {
 }
 
 #shaperectangle {
-  border: 1px solid transparent;
+  width: 0;
+  height: 0;
+  border: 15px solid #1f1f1f;
   background: #6a6a6a;
 }
 
@@ -50,12 +56,45 @@ a {
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 25px solid #1f1f1f;
+  border-bottom: 30px solid #1f1f1f;
   display:inline-block;
   background: white;
 }
 
-.red { background: red; }
+#shapeoval {
+  width: 0;
+  height: 0;
+  border: 15px solid #1f1f1f;
+  border-radius: 45px;
+  display:inline-block;
+  background: white;
+}
+
+#shapestraightLine{
+  position: relative;
+  top: -15px;
+  width: 35px;
+  height: 0;
+  border-bottom: 5px solid #1f1f1f;
+  display:inline-block;
+  background: white;
+  transform: rotate(45deg);
+}
+
+#shapeline{
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-bottom: 5px solid #1f1f1f;
+  border-left: 5px solid #1f1f1f;
+  border-bottom-left-radius: 30px;
+  display:inline-block;
+  background: white;
+  margin-right: -5px;
+}
+
+
+.red { background-color: red; }
 .red1 { background: #F16161; }
 .red2 { background: #F69FA0; }
 .orange { background: orange; }
@@ -85,7 +124,9 @@ a {
   border: 1px solid gray;
   float: none;
   margin: 0 auto;
+  margin-left: 25px;
   border-radius: 50%;
+  display: inline-block;
 }
 
 #paintbg {
@@ -96,7 +137,7 @@ a {
 
 #colorpanel {
   width: 150px;
-  height: 450px;
+  height: 475px;
   float: left;
   margin-right: 9px;
   border: 1px solid black;
@@ -104,10 +145,10 @@ a {
 }
 
 #linepanel {
-  margin-top: 75px;
+  margin-top: 65px;
   margin-left: 9px;
   width: 185px;
-  height: 317px;
+  height: 325px;
   float: right;
   border: 1px solid black;
   border-radius: 10px;
@@ -183,7 +224,7 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: slider-vertical;
   height: 16px;
   width: 16px;
-  border: 3px solid blue;
+  border: 3px solid rgb(7, 7, 58);
   margin-top: -4px;
 }
 
